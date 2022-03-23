@@ -2,7 +2,7 @@ name: doggy-kitty contributor
 
 on:
   schedule:
-    - cron: "* * * * *"
+    - cron: "* 0/5 * * *"
 
   
 
@@ -25,5 +25,5 @@ jobs:
           var=$(shuf -n 1 names.txt)
           ls -a
           git add -A
-          git commit -m "$var updated your github >.<"
+          git commit -m "$var updated your github $_$"
           git push
