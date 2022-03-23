@@ -24,7 +24,6 @@ jobs:
           echo $RANDOM >> random.txt
           var=$(shuf -n 1 names.txt)
           ls -a
-          shuf -n 1 names.txt > output
           git add -A
           git commit -m "$var updated your github >.<"
           git push
